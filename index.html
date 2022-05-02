@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Sound Identification Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="col-xs-12 header_div text-center">
+      <h2>Sound of Animals </h2>
+      <p> Note:Play different sounds like barking,meowing</p>
+    </div>
+    <div class="maindiv">
+      
+     <center>
+<br>
+<br>
+<button class="btn btn-warning" onclick="soundClassification()">Play Sound</button>
+<h3 id="result_label">Sound identified as-</h3>
+<h4 id="accuracy">Accuracy-</h4>
+<br>
+<img src="ear.jpg" id="ear" height="300" width="300">
+<img src="cat.jpg" id="cat" height="300" width="300">
+<img src="dog.jpg" id="dog" height="300" width="300">
+<img src="lion.jpg" id="lion" height="300" width="300">
+<img src="cow.jpg" id="cow" height="300" width="300">
+      </center>
+    </div>
+    <div class="footer">Developed by-Diya </div>
+<script src="main.js"></script>
+  </body>
+</html>
